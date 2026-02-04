@@ -1,6 +1,4 @@
-function getFormvalue(event) {
-    event.preventDefault();
-
+function getFormvalue() {
     var fname = document.forms[0]["fname"].value.trim();
     var lname = document.forms[0]["lname"].value.trim();
 
