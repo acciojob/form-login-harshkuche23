@@ -1,11 +1,8 @@
-function getFormvalue() {
-    //Write your code here
-    const form = document.forms[0];
+function getFormvalue(event) {
+    event.preventDefault();
 
-    const firstName = form.fname.value.trim();
-    const lastName = form.lname.value.trim();
+    var fname = document.forms[0]["fname"].value.trim();
+    var lname = document.forms[0]["lname"].value.trim();
 
-    alert(firstName + " " + lastName);
-}
-
+    alert(fname + " " + lname);
 }
